@@ -31,7 +31,6 @@ void createlist(Position p, int a[], int n)
 		p ->Next = s;			//头结点的指针域next指向s结点，使得s成为新的开始结点
 
 	}
-
  }
 
 int IsEmpty(List l)
