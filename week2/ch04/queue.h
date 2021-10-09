@@ -23,8 +23,6 @@ int IsFull(Queue Q);//判断队列是否为满；
 
 void MakeEmpty(Queue Q);//置空
 
-//int LengthOfQueue(Queue Q);//计算队列长度
-
 void EnQueue(Queue Q, ElementType data);//入队
 
 void DeQueue(Queue Q);//出队
