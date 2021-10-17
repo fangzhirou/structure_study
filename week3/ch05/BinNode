@@ -1,0 +1,25 @@
+#ifndef BINNODE_H
+#define BINNODE_H
+#include <stdio.h>
+#include <stdlib.h>
+#define INFINITY 32767
+//二项队列
+typedef struct BinHeapNode BinHeapNode;
+typedef BinHeapNode* BinHeapNodelink;
+typedef BinHeapNode* BinHeap;
+struct BinHeapNode
+{
+    int key;
+    int degree;
+    BinHeapNodelink parent;
+    BinHeapNodelink leftChild;
+    BinHeapNodelink sibling; //兄弟
+};
+BinHeap creatBinHeap();
+BinHeap findBinHeapMin(BinHeap heap);
+BinHeap BinHeapUnion(BinHeap H1, BinHeap H2);
+BinHeap BinHeapMerge(BinHeap H1, BinHeap H2);
+BinHeap BinHeapPair(BinHeap H1, BinHeap H2);
+BinHeap CreatHeapWithArray(int a[], int n);
+BinHeap BinHeapDelMin(BinHeap H1);
+#endif // BINNODE_H
