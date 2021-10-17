@@ -24,4 +24,5 @@ struct HashTb1
 	int TableSize;
 	List *TheLists;
 };
+
 #endif // HASHSEP_H
