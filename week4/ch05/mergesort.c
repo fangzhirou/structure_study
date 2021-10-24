@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 //归并排序解决练习7.13
 int merge(int r[],int s[],int left,int mid,int right)
 {
